@@ -347,3 +347,10 @@ __git_command_successful () {
 }
 
 zstyle ':completion:*:*:git:*' user-commands flow:'description for foo'
+
+alias fs="git flow feature start"
+alias ff="git flow feature finish"
+alias fc="git flow feature checkout"
+alias fl="git flow feature list"
+alias fr="git rebase develop"
+
