@@ -126,4 +126,6 @@ function _git_log_prettily(){
 }
 alias glp="_git_log_prettily"
 compdef _git glp=git-log
+REPO_HOME="projects"
+alias gdaemon="ruby $ZSH/plugins/git/gdaemon_repo.rb; g daemon --reuseaddr --base-path=${HOME}/${REPO_HOME}"
 alias gfix="git rebase -i HEAD~20"
