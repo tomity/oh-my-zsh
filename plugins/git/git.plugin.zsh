@@ -129,3 +129,4 @@ compdef _git glp=git-log
 REPO_HOME="projects"
 alias gdaemon="ruby $ZSH/plugins/git/gdaemon_repo.rb; g daemon --reuseaddr --base-path=${HOME}/${REPO_HOME}"
 alias gfix="git rebase -i HEAD~20"
+alias grc="git rebase --continue"
