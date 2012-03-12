@@ -13,6 +13,7 @@ alias gp='git push'
 compdef _git gp=git-push
 alias gd='git diff'
 gdv() { git diff -w "$@" | view - }
+gdcv() { git diff --cached -w "$@" | view - }
 compdef _git gdv=git-diff
 alias gc='git commit -v'
 compdef _git gc=git-commit
