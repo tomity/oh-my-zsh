@@ -83,6 +83,8 @@ alias gsts='git stash show --text'
 # Will cd into the top of the current repository
 # or submodule.
 alias grt='cd $(git rev-parse --show-toplevel || echo ".")'
+alias gap="git add -p"
+compdef _git gap=git-add
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
